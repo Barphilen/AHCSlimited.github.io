@@ -24,7 +24,7 @@ html, body{
 .header{
     z-index: 9999;
     text-align: center;
-    position: relative;
+    position: absolute;
     top:20%;
     left:48%;
     transform: translate(-50%, -50%);       
@@ -47,7 +47,7 @@ color:#fff;
 
 .form{
 margin-top: 30px;
-position: absolute;
+position: relative;
 top:50%;
 left:50%;
 transform: translate(-30%,-50%);
