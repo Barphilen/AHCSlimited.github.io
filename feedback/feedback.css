@@ -22,7 +22,6 @@ html, body{
   
 }
 .header{
-    min-height:150px;
     z-index: 9999;
     text-align: center;
     position: absolute;
@@ -52,7 +51,6 @@ position: relative;
 top:50%;
 left:50%;
 transform: translate(-30%,-50%);
-min-height:150px;
 }
 
 input {
