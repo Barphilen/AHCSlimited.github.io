@@ -3,12 +3,12 @@ body { font-family: Century Gothic, Ariel, Helvetica, sans-serif;
 	padding:0;
 	margin:0;
 	text-align: justify; 
-	background-color:#696969af; 
+	background-color:#696969af;
 	}
 	
 	#bar {
 		border-style: inset outset;
-		border-color:rgbargb(0, 139, 204);
+		border-color:rgba(0, 139, 204);
 		background:aliceblue;
 	}
 	
@@ -30,7 +30,7 @@ body { font-family: Century Gothic, Ariel, Helvetica, sans-serif;
 	.header{    
 		width: 100%;
 		height: 6.2em;
-		position: fixed;
+		position: absolute;
 		z-index: 1000;
 		top: 0;
 		left: 0;
@@ -252,6 +252,8 @@ body { font-family: Century Gothic, Ariel, Helvetica, sans-serif;
 	text-align: left;
 }
 #colorbox2{
+	letter-spacing:0.1px;
+	margin-top: 7px;
 	background: rgb(0, 139, 204);
 	border-radius: 30px;
 	padding:20px;
@@ -296,56 +298,58 @@ body { font-family: Century Gothic, Ariel, Helvetica, sans-serif;
 	overflow: hidden;
 	border-radius: 20px;
  }
-	/*Subscribe*/
-
-	#subscribe h2{
-		overflow: hidden;
-		float:left;
-		padding-left:100px;
-		}
-		
-		#subscribe {
-		overflow: hidden;
-		padding-right:100px;
-		animation: text 3s 1;
-		word-spacing: 3px;
-		letter-spacing: 5px;
-		font: size 15em;
-		color:#fff;
-		text-transform: uppercase;
-		text-shadow: 0 7px 10px rgba(0,0,0,1);
-		box-shadow: 10px 3px 100px rgba(0,0,0,1);
-		background:  rgb(0, 139, 204);
-	}
+/*Subscribe*/
 	
-	.button_1:hover{
+	#subscribe {
+	overflow: hidden;
+	padding-right:140px;
+	animation: text 3s 1;
+	word-spacing: 3px;
+	letter-spacing: 5px;
+	font: size 20em;
+	color:rgba(255, 255, 255, 0.932);
+	text-transform: uppercase;
+	text-shadow: 0 7px 10px rgba(0,0,0,1);
+	box-shadow: 10px 3px 100px rgba(0,0,0,1);
+	background:  rgb(0, 139, 204);
+}
+
+#subscribe h2{
+	overflow: hidden;
+	float:left;
+	padding-left:50px;
+	}
+
+.button_1{
+	margin-top: 30px;
+	width:165px;
+	height:40px;
+	background:rgba(30, 32, 32, 0.774);
+	color:#ffffff;
+	border-style: inset outset;
+	border-color:rgba(30, 32, 32, 0.774);
+	float: right;
+	border-radius: 30px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 30px;
+	}
+
+.button_1:hover{
 		opacity:0.7;
 		cursor: pointer;
 	}
-	.button_1{
-		margin-top: 20px;
-		width:165px;
-		height:40px;
-		background:rgba(30, 32, 32, 0.774);
-		color:#ffffff;
-		border-style: inset outset;
-		border-color:rgba(30, 32, 32, 0.774);
-		float: right;
-		border-radius: 30px;
-		text-align: center;
-		position: relative;
-		}
 
 .letstalk{
-	text-decoration: none;
-	letter-spacing: 1.3px;
- font-size: 20px;
- font-weight: 750;
- color: aliceblue;
+text-decoration: none;
+letter-spacing: 1.3px;
+font-size: 20px;
+font-weight: 750;
+color: aliceblue;
 }
 
 .letstalk:hover{
-	color:#e8491d;
+color:#e8491d;
 }
 
 
@@ -355,28 +359,60 @@ body { font-family: Century Gothic, Ariel, Helvetica, sans-serif;
 	overflow: hidden;
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: 700;
-	min-height:250px;
-	display: inline-block;
+	min-height:300px;
 	letter-spacing:1px;
+	padding-top: 20px;
 	}
-	
-	#boxes .box{
-		overflow: hidden;
-		padding: 10px 100px;
-		float:left;
-		text-align: center;
-		
-	}
-
-	.list{
-		overflow: hidden;
-		font-weight: 500;
+	#container2{
+		width:100%;
+		height:auto;
+		background:none;   
 		display: flex;
-		justify-content: space-between;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-flow:wrap;
+   }
+   @media screen and (max-width: 1200px)
+{.box10{
+	width:40%;
+}}
+@media only screen and (max-width: 600px)
+{.box10{
+	width:90%;
+}}
+ 
+ #container2 .box10{
+	position: relative;
+	width:calc(400px - 30px);
+	height:400px;
+	background:solid #696969af;
+	float:left;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 20px;
+	
+ }
+#h3a{
+	text-align: center;
+	padding-left: 35px;
+}
+#h3b{
+	text-align: center;
+	padding-left: 35px;
+
+}
+	.list1{
+		text-align: center;
+		font-weight: 500;
 		align-items: center;
 		line-height:2.7;
-		letter-spacing:0.1px;
-		
+		letter-spacing:0.1px;	
+	}
+	.list2{
+		text-align: center;
+	    font-weight: 500;
+		line-height:2.7;
+		letter-spacing:0.1px;	
 	}
 
 	.redirect2 {
